@@ -7,7 +7,7 @@
     <title><?php echo $title; ?></title>
     <link rel="icon" href="<?php echo site_url('assets/bootswatch5/docs/_assets/img/logo.svg'); ?>" type="image/x-icon">
     <!-- Bootstrap CSS -->
-    <link href="<?= base_url('assets/bootswatch-5/dist/solar/bootstrap.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/bootswatch-5/dist/darkly/bootstrap.min.css') ?>" rel="stylesheet">
 </head>
 
 <body>
@@ -20,16 +20,16 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link <?php echo $active_menu == 'home' ? 'active' : ''; ?>" href="<?= site_url('index.php/beranda') ?>">Home</a>
+                        <a class="nav-link <?php echo $active_menu == 'home' ? 'active' : ''; ?>" href="<?= site_url('beranda') ?>">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?php echo $active_menu == 'data_mahasiswa' ? 'active' : ''; ?>" href="<?= site_url('index.php/mahasiswa') ?>">Data Mahasiswa</a>
+                        <a class="nav-link <?php echo $active_menu == 'data_mahasiswa' ? 'active' : ''; ?>" href="<?= site_url('mahasiswa') ?>">Data Mahasiswa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?php echo $active_menu == 'data_barang' ? 'active' : ''; ?>" href="<?= site_url('index.php/barang') ?>">Data Barang</a>
+                        <a class="nav-link <?php echo $active_menu == 'data_barang' ? 'active' : ''; ?>" href="<?= site_url('barang') ?>">Data Barang</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?php echo $active_menu == 'tentang' ? 'active' : ''; ?>" href="<?= site_url('index.php/tentang') ?>">Tentang</a>
+                        <a class="nav-link <?php echo $active_menu == 'tentang' ? 'active' : ''; ?>" href="<?= site_url('tentang') ?>">Tentang</a>
                     </li>
                 </ul>
             </div>

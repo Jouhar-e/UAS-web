@@ -50,22 +50,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
-// Mahasiswa
-$route['mahasiswa'] = 'mahasiswa/data_mahasiswa';
-$route['mahasiswa/create_mahasiswa'] = 'mahasiswa/create_mahasiswa';
-$route['mahasiswa/edit_mahasiswa/(:num)'] = 'mahasiswa/edit_mahasiswa/$1';
-$route['mahasiswa/delete_mahasiswa/(:num)'] = 'mahasiswa/delete_mahasiswa/$1';
+// Proyek
+$route['proyek'] = 'Proyek/data_proyek';
+$route['cariproyek'] = 'Proyek/search_proyek';
+$route['proyek/create_proyek'] = 'Proyek/create_proyek';
+$route['proyek/edit_proyek/(:num)'] = 'Proyek/edit_proyek/$1';
+$route['proyek/delete_proyek/(:num)'] = 'Proyek/delete_proyek/$1';
 
-// Barang
-$route['barang'] = 'barang/data_barang';
-$route['caribarang'] = 'barang/search_barang';
-$route['barang/create_barang'] = 'barang/create_barang';
-$route['barang/edit_barang/(:num)'] = 'barang/edit_barang/$1';
-$route['barang/delete_barang/(:num)'] = 'barang/delete_barang/$1';
+// Petugas
+$route['petugas'] = 'Petugas/data_petugas';
+$route['caripetugas'] = 'Petugas/search_petugas';
+$route['petugas/create_petugas'] = 'Petugas/create_petugas';
+$route['petugas/edit_petugas/(:num)'] = 'Petugas/edit_petugas/$1';
+$route['petugas/delete_petugas/(:num)'] = 'Petugas/delete_petugas/$1';
 
 // Tentang
 $route['tentang'] = 'beranda/data_tentang';
+$route['home'] = 'beranda';
+$route['login'] = 'Login';
 
-$route['default_controller'] = 'beranda';
+$route['default_controller'] = 'Login';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
